@@ -73,7 +73,6 @@ async def start_handler(message: types.Message):
         element = driver.find_element(By.LINK_TEXT, "Согласен")
         element.click()
         time.sleep(4)
-        # driver.get_screenshot_as_file('screen.png')
 
         newelement = driver.find_element(By.CSS_SELECTOR, 'div.ui-table')
         newelement.screenshot("Security price.png")
@@ -90,5 +89,4 @@ async def start_handler(message: types.Message):
 
 
 if __name__ == "__main__":
-    #Dispatcher.stop_polling(dp)
     executor.start_polling(dp)
