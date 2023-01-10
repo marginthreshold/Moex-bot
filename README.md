@@ -2,4 +2,4 @@
 
 Чат-бот в телеграм, который выгружает по выбранной акции из класса TQBR цены за неделю и выдает ссылку на текущие характеристи акции и цену на текущий день.
 
-![] (https://github.com/marginthreshold/Moex-bot/edit/main/Show%20moex_bot.gif)
+![](https://github.com/marginthreshold/Moex-bot/edit/main/Show%20moex_bot.gif)
