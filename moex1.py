@@ -9,7 +9,7 @@ import codecs
 import csv
 from aiogram import Bot, Dispatcher, executor, types
 import os
-
+import asyncio
 
 currdir = os.path.abspath(os.curdir)
 
@@ -69,10 +69,10 @@ async def start_handler(message: types.Message):
         driver.get("https://www.moex.com/ru/marketdata/#/mode=instrument&secid=" +
                    f"{asset}"+"&boardgroupid=57&mode_type=history&date_from="+f"{week_date}"+"&date_till="+f"{previous_date}")
 
-        time.sleep(1)
+        await asyncio.sleep(1)
         element = driver.find_element(By.LINK_TEXT, "Согласен")
         element.click()
-        time.sleep(4)
+        await asyncio.sleep(4)
 
         newelement = driver.find_element(By.CSS_SELECTOR, 'div.ui-table')
         newelement.screenshot("Security price.png")
