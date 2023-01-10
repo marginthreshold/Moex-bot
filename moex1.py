@@ -24,7 +24,7 @@ def from_csv_to_list(file_name):
 
 tickers_list = from_csv_to_list("tickers.csv")
 
-TOKEN = "5788907029:AAHLPQ_W6llE1A_s3ETwN0f8Vo31EPPo3Og"
+TOKEN = ""
 MSG = "Введите тикер акции класс TQBR для просмотра цен за неделю."
 
 bot = Bot(token=TOKEN)
